@@ -1,3 +1,4 @@
+import Home from "components/home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.scss";
@@ -9,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route exact path="/" />
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
