@@ -1,0 +1,36 @@
+@import "../../assetss/globalstyles/style.scss";
+$height: 150px;
+header {
+    @include flex(row, space-between);
+    position: fixed;
+    width: 100vw;
+    height: $height;
+    font-weight: 700;
+    .logo {
+        width: 220px;
+        height: 45px;
+        margin-left: 60px;
+        margin-right: 190px;
+    }
+    nav {
+        ul {
+            @include flex(row, space-between, center, 70px);
+            li {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+    .btn {
+        background-image: linear-gradient(to right, $bg-color2 60%, $bg-color1);
+        width: 160px;
+        height: 45px;
+        @include flex(row, center, center);
+        border-top-left-radius: 6px;
+        opacity: 0.85;
+        @include transation(0.2s);
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
