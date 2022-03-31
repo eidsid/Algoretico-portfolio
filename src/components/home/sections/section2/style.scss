@@ -1,0 +1,51 @@
+@import "assetss/globalstyles/style.scss";
+.section2 {
+    min-height: 100vh;
+    background-color: $bg-color4;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100px;
+    }
+    h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+    .cards {
+        @include flex();
+        flex-wrap: wrap;
+        gap: 1rem;
+        .card {
+            @include flex();
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            font-size: xx-large;
+            font-weight: bolder;
+            border-bottom: 1rem solid rgba(255, 255, 0, 0.589);
+            background-image: linear-gradient(to bottom, $bg-color4, $bg-color1 80%);
+            border-radius: 1rem;
+            transition: all ease-in-out 0.4s;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+                box-shadow: 0 -10px 10px 1px $bg-color1;
+            }
+        }
+    }
+    .circles {
+        @include flex(space-between, space-between);
+        * {
+            animation: anim 3s infinite ease-in;
+        }
+    }
+}
+
+@keyframes anim {
+    50% {
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
