@@ -36,10 +36,46 @@
         }
     }
     .right {
+        width: 300px;
+        height: 300px;
+        border: 10px solid transparent;
+        border-radius: 2rem;
+        overflow: hidden;
+        position: relative;
+        @include flex();
         img {
-            width: 30vw;
-            border: 10px solid transparent;
-            border-radius: 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .button {
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .vedoshow {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.527);
+            position: fixed;
+            top: 0;
+            left: 0;
+            @include flex();
+            .button {
+                margin-top: -355px;
+                margin-left: 0rem;
+                background-color: rgba(0, 0, 0, 0.452);
+                border-radius: 0;
+                font-weight: 700;
+                @include flex();
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
         }
     }
     .bottom-circel {
