@@ -1,0 +1,77 @@
+@import "assetss/globalstyles/style.scss";
+.section1 {
+    background-image: linear-gradient(to right, $bg-color3, $bg-color4);
+    background-color: aqua;
+    padding: 130px 90px 100px 160px;
+    @include flex(row, space-between, center);
+    gap: 2rem;
+    height: 100vh;
+    .left {
+        @include flex(column, flex-start, flex-start);
+        align-items: flex-start;
+        position: relative;
+        p {
+            font-weight: 400;
+            font-size: 63px;
+            line-height: 72px;
+            height: 216px;
+            width: 426px;
+        }
+        h1 {
+            font-weight: 900;
+            font-size: 150px;
+            line-height: 110px;
+            width: 300px;
+            span {
+                margin-left: 1rem;
+                background-image: radial-gradient( 100% 78.2% at 50% 75.44%, #f69d26 0%, #f97400 27.33%, #f23ac6 54.4%, #e138c6 78.88%, #db34bf 100%);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        .circleContainer {
+            position: absolute;
+            bottom: -100px;
+            right: -30%;
+        }
+    }
+    .right {
+        img {
+            width: 30vw;
+            border: 10px solid transparent;
+            border-radius: 3rem;
+        }
+    }
+    .bottom-circel {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 130px;
+        height: 120px;
+        overflow: hidden;
+        @include flex();
+        img {
+            position: absolute;
+            width: fit-content;
+        }
+        a {
+            margin-top: 1rem;
+            margin-left: -1rem;
+            font-weight: 700;
+            text-align: center;
+            * {
+                display: block;
+                font-size: 10px;
+            }
+        }
+        .circle {
+            position: absolute;
+            top: 0%;
+            left: -40%;
+            border: #db34bf 1px solid;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+    }
+}

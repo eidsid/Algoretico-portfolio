@@ -1,0 +1,30 @@
+@import "assetss/globalstyles/style.scss";
+.circleContainer {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    * {
+        position: absolute;
+    }
+}
+
+.arrow {
+    clip-path: polygon( 25.75% 77.46%, 50% 88.69%, 50% 45.78%, 55.77% 45.78%, 55.77% 88.69%, 78.75% 77.46%, 52.25% 100%);
+    background-color: rgb(255, 255, 255);
+    left: 1rem;
+    height: 100px;
+    width: 100px;
+    &.none {
+        display: none;
+    }
+    &.left {
+        transform: rotate(90deg);
+    }
+    &.right {
+        transform: rotate(270deg);
+    }
+    &.top {
+        transform: rotate(180deg);
+    }
+}
