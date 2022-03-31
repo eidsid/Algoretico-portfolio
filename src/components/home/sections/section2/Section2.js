@@ -21,6 +21,17 @@ const Section2 = () => {
         <div className="card">education</div>
         <div className="card">A TOOL FOR MY COMPANY</div>{" "}
       </div>
+      <div className="branding">
+        <h2>
+          we work <span>with</span>
+        </h2>
+        <marquee>
+          <span>Google</span>
+          <span>sky</span>
+          <span>facebook</span>
+          <span>instagram</span>
+        </marquee>
+      </div>
     </div>
   );
 };

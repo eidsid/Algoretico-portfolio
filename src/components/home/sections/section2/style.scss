@@ -39,6 +39,28 @@
             animation: anim 3s infinite ease-in;
         }
     }
+    .branding {
+        width: 100%;
+        @include flex();
+        h2 {
+            color: #380163;
+            font-size: xx-large;
+            font-weight: 900;
+            position: relative;
+            span {
+                position: absolute;
+                top: 20px;
+                left: 50px;
+                color: #f85911;
+            }
+        }
+        marquee {
+            span {
+                font-size: 40px;
+                margin-left: 10%;
+            }
+        }
+    }
 }
 
 @keyframes anim {
