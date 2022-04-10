@@ -2,9 +2,9 @@
 $height: 150px;
 header {
     @include flex(row, space-between);
-    position: fixed;
     width: 100vw;
     height: $height;
+    margin-bottom: -$height;
     font-weight: 700;
     .logo {
         width: 220px;
