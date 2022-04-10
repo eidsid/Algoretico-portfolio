@@ -1,0 +1,16 @@
+@import "assetss/globalstyles/style.scss";
+.S-section1 {
+    background-image: linear-gradient(to right, $bg-color3, $bg-color4);
+    gap: 2rem;
+    height: 100vh;
+    padding-top: 150px;
+    font-weight: 400;
+    line-height: 70px;
+    .title {
+        @include flex(column, center, center, 3rem);
+        h4 {
+            margin-top: -5rem;
+            margin-left: -1rem;
+        }
+    }
+}
