@@ -1,113 +1,79 @@
 @import "assetss/globalstyles/style.scss";
-.section1 {
-    background-image: linear-gradient(to right, $bg-color3, $bg-color4);
-    background-color: aqua;
-    padding: 130px 90px 100px 160px;
-    @include flex(row, space-between, center);
-    gap: 2rem;
-    height: 100vh;
-    .left {
-        @include flex(column, flex-start, flex-start);
-        align-items: flex-start;
-        position: relative;
-        p {
-            font-weight: 400;
-            font-size: 63px;
-            line-height: 72px;
-            height: 216px;
-            width: 426px;
-        }
-        h1 {
-            font-weight: 900;
-            font-size: 150px;
-            line-height: 110px;
-            width: 300px;
-            span {
-                margin-left: 1rem;
-                background-image: radial-gradient( 100% 78.2% at 50% 75.44%, #f69d26 0%, #f97400 27.33%, #f23ac6 54.4%, #e138c6 78.88%, #db34bf 100%);
-                background-clip: text;
-                color: transparent;
-            }
-        }
-        .circleContainer {
-            position: absolute;
-            bottom: -100px;
-            right: -30%;
-        }
-    }
-    .right {
-        width: 300px;
-        height: 300px;
-        border: 10px solid transparent;
-        border-radius: 2rem;
-        overflow: hidden;
-        position: relative;
-        @include flex();
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .button {
-            z-index: 1;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        .vedoshow {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.527);
-            position: fixed;
-            top: 0;
-            left: 0;
-            @include flex();
-            .button {
-                margin-top: -355px;
-                margin-left: 0rem;
-                background-color: rgba(0, 0, 0, 0.452);
-                border-radius: 0;
-                font-weight: 700;
-                @include flex();
-                &:hover {
+.S-section3 {
+    min-height: 100vh;
+    background-color: $bg-color4;
+    padding-top: 2rem;
+    .container {
+        @include flex(row);
+        .cards {
+            padding: 1rem;
+            @include flex(column, center, center, 1rem);
+            .card {
+                width: 350px;
+                padding: 1rem;
+                background: linear-gradient(120.87deg, #ff4f00 28.43%, #fd7d00 86.35%);
+                border-radius: 12px;
+                padding: 2rem 1rem;
+                h1 {
+                    padding-left: 10%;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 20px;
+                }
+                h2 {
+                    padding-left: 50%;
+                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 72px;
                     opacity: 0.7;
+                }
+                p {
+                    max-width: 200px;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 16px;
+                    text-align: left;
+                    span {
+                        opacity: 0.5;
+                        margin: 1rem;
+                    }
+                }
+                .circel {
+                    float: right;
+                    width: 130px;
+                    height: 120px;
+                    @include flex();
+                    font-weight: 900;
+                    line-height: 100px;
+                    letter-spacing: 1px;
+                    border-radius: 50%;
+                    background-color: $bg-color1;
+                    .progressCircel {
+                        @include flex();
+                        width: 60px;
+                        height: 60px;
+                        border-radius: inherit;
+                        background-color: inherit;
+                        border-right: 2px solid $bg-color4;
+                        &.__2 {
+                            border-bottom: 2px solid $bg-color4;
+                        }
+                        &.__3 {
+                            border: 2px solid $bg-color4;
+                        }
+                    }
                 }
             }
         }
-    }
-    .bottom-circel {
-        left: 0;
-        bottom: -1rem;
-        position: absolute;
-        width: 130px;
-        height: 120px;
-        overflow: hidden;
-        @include flex();
-        img {
-            position: absolute;
-            width: fit-content;
-        }
-        a {
-            margin-top: 1rem;
-            margin-left: -1rem;
-            font-weight: 700;
-            text-align: center;
-            * {
-                display: block;
-                font-size: 10px;
+        .__2 {
+            .cards .card {
+                background: linear-gradient(120.87deg, #5c0b7e 16.41%, #f23ac6 83.91%);
             }
         }
-        .circle {
-            position: absolute;
-            top: 0%;
-            left: -40%;
-            border: #db34bf 1px solid;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
+        .__3 {
+            .cards .card {
+                background: linear-gradient(120.87deg, #4618b5 16.41%, #5c0b7e 74.69%);
+            }
         }
     }
 }
