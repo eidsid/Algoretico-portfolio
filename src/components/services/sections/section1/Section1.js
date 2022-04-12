@@ -10,6 +10,38 @@ const Section1 = () => {
         <Circel arrowType="down" />
         <h4>we make it</h4>
       </div>
+      <div className="info">
+        <div className="col">
+          <p>
+            LOREMIPSU
+            <span>sit amet</span>
+          </p>
+        </div>
+        <div className="col">
+          <p>
+            Le{" "}
+            <span>
+              {" "}
+              <strong>Intelligenze Artificiali</strong>
+            </span>{" "}
+            nascono per risolvere problemi e semplificare la vita delle persone.
+            Algoretico realizza le IA che ti servono, e usarle è davvero
+            semplicissimo.
+          </p>
+        </div>
+        <div className="col">
+          <p>
+            Le{" "}
+            <span>
+              {" "}
+              <strong>Intelligenze Artificiali</strong>
+            </span>{" "}
+            nascono per risolvere problemi e semplificare la vita delle persone.
+            Algoretico realizza le IA che ti servono, e usarle è davvero
+            semplicissimo.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
