@@ -1,0 +1,53 @@
+@import "assetss/globalstyles/style.scss";
+.a_section2 {
+    position: relative;
+    min-height: 60vh;
+    background-color: rgb(66, 129, 129);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    .left {
+        background-color: $bg-color4;
+        .circel {
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            img {
+                height: 300px;
+                filter: brightness(10);
+            }
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 46px;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+             ::before {
+                content: "/ CHI SIAMO";
+                font-size: 10px;
+                position: absolute;
+                letter-spacing: 1px;
+                top: -100%;
+                left: -90%;
+            }
+            span {
+                font-weight: normal;
+                position: absolute;
+                top: 70%;
+                right: -55%;
+                font-size: larger;
+                letter-spacing: 8px;
+            }
+        }
+    }
+    .right {
+        background-color: $bg-color3;
+        @include flex();
+        padding: 2rem;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        padding-top: 5rem;
+    }
+}
