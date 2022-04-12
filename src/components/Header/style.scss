@@ -6,6 +6,7 @@ header {
     height: $height;
     margin-bottom: -$height;
     font-weight: 700;
+    z-index: 10000;
     .logo {
         width: 220px;
         height: 45px;
