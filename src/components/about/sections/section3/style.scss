@@ -1,0 +1,9 @@
+@import "assetss/globalstyles/style.scss";
+.a_section3 {
+    background-color: $bg-color3;
+    @include flex();
+    padding: 2rem;
+    * {
+        padding: 1rem;
+    }
+}
