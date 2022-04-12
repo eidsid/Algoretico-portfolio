@@ -1,7 +1,7 @@
 @import "assetss/globalstyles/style.scss";
 .a_section2 {
     position: relative;
-    min-height: 60vh;
+    min-height: 100vh;
     background-color: rgb(66, 129, 129);
     display: grid;
     grid-template-rows: 1fr;
@@ -49,5 +49,10 @@
         font-size: 20px;
         line-height: 36px;
         padding-top: 5rem;
+        .circel {
+            position: absolute;
+            bottom: -1rem;
+            right: 1rem;
+        }
     }
 }

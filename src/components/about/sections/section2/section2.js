@@ -23,6 +23,9 @@ const Section2 = () => {
           proprietario definitivo. Quell’anima ti appartiene, solo così creerai
           valore per la tua realtà.
         </p>
+        <div className="circel">
+          <Circel />
+        </div>
       </div>
     </div>
   );
