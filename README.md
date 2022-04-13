@@ -1,5 +1,5 @@
 to install all packages
-### 'npm i'
+### `npm i`
 
 to start the project you can run:
 ### `npm start`
