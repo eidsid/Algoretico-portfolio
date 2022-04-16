@@ -1,0 +1,82 @@
+@import "assetss/globalstyles/style.scss";
+$bg-color1: #f23ac6;
+$bg-color2: #fc7000;
+$bg-color3: #3331f5;
+$bg-color4: #500c96;
+.M-section1 {
+    min-height: 100vh;
+    background-color: $bg-color4;
+    position: relative;
+    padding-top: 7rem;
+    @include flex();
+    z-index: -1;
+    .topsquire {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 5%;
+        left: 15%;
+        perspective: 300px;
+        transform: rotateY(30deg);
+        .front-side {
+            position: absolute;
+            top: -2.7%;
+            width: 400px;
+            height: 100px;
+            margin-top: 5rem;
+            background: linear-gradient( 241.28deg, $bg-color4 36.82%, $bg-color1 95.74%);
+            transform: rotateY(50deg) rotate(-11.2deg);
+            font-size: 110px;
+            @include flex();
+            padding-left: 10rem;
+        }
+        .left-side {
+            position: absolute;
+            left: -67%;
+            top: 24.4%;
+            width: 200px;
+            height: 209px;
+            background: $bg-color1;
+            transform: rotateX(-18deg) skewX(2deg);
+            @include flex();
+            span {
+                font-size: 8rem;
+            }
+        }
+    }
+    .Circel {
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        position: relative;
+        @include flex();
+        .background {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .content {
+            h1 {
+                font-weight: 200;
+                font-size: 36px;
+                width: 300px;
+                text-align: center;
+                .circleContainer {
+                    margin-left: 15rem;
+                }
+            }
+            p {
+                position: absolute;
+                left: -60%;
+                span {
+                    opacity: 0.7;
+                    margin-left: 7rem;
+                }
+            }
+        }
+    }
+}
