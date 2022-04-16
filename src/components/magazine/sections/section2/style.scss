@@ -1,1 +1,58 @@
 @import "assetss/globalstyles/style.scss";
+.M-section2 {
+    min-height: 80vh;
+    background: #392ae4;
+    @include flex(column, flex-start, flex-start, 2rem);
+    .col {
+        &:nth-child(1) {
+            width: 100%;
+            @include flex(row, space-between);
+            padding: 1rem;
+            .left {
+                h1 {
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 2rem;
+                    opacity: 0.5;
+                }
+            }
+            .right {
+                h1 {
+                    margin-top: 2rem;
+                    margin-right: -6.2rem;
+                    transform: rotate(90deg);
+                    font-size: 5rem;
+                }
+            }
+        }
+        &:nth-child(2) {
+            @include flex();
+            gap: 3rem;
+            width: 500px;
+            margin-bottom: 3rem;
+            .image {
+                img {
+                    width: 200px;
+                }
+                .arrow {
+                    margin-top: 7rem;
+                    margin-left: 80%;
+                }
+            }
+            p {
+                z-index: 1;
+            }
+        }
+        &:nth-child(3) {
+            margin: 0 auto;
+            @include flex(column);
+            gap: 1rem;
+            margin-bottom: 2rem;
+            p {
+                max-width: 700px;
+                font-size: larger;
+            }
+        }
+    }
+}
