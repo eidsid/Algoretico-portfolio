@@ -2,11 +2,12 @@
 $height: 150px;
 header {
     @include flex(row, space-between);
-    width: 100vw;
+    width: 100%;
     height: $height;
     margin-bottom: -$height;
     font-weight: 700;
     z-index: 10000;
+    transition: 0.4s ease-in-out;
     .logo {
         width: 220px;
         height: 45px;
@@ -32,6 +33,111 @@ header {
         @include transation(0.2s);
         &:hover {
             opacity: 1;
+        }
+    }
+    .bars {
+        width: 50px;
+        height: 5px;
+        background: white;
+        position: relative;
+        transition: 0.4s linear;
+        display: none;
+        .hidden-btn {
+            position: absolute;
+            top: -1.4rem;
+            left: 0;
+            width: inherit;
+            height: 50px;
+            cursor: pointer;
+        }
+        &::before,
+        &::after {
+            transition: 0.4s linear;
+            content: "";
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            background: inherit;
+        }
+        &::after {
+            top: -1rem;
+        }
+        &.active {
+            position: absolute;
+            top: 4rem;
+            right: 2rem;
+            transform: rotate(50deg);
+            &::before {
+                display: none;
+            }
+            &::after {
+                top: 0;
+                transform: rotate(70deg);
+            }
+        }
+    }
+    @media (max-width: $mediamScreen) {
+        background-color: rgba(0, 0, 0, 0.377);
+        position: fixed;
+        padding: 2rem;
+        flex-direction: row;
+        opacity: 0.6;
+        .logo {
+            margin-left: 0;
+        }
+        nav {
+            display: none;
+            ul {
+                li {
+                    font-size: 1.3rem;
+                     :hover {
+                        transition: 0.5s ease-in-out;
+                        background-color: white;
+                        color: black;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: none;
+            margin-bottom: 2rem;
+        }
+        .bars {
+            display: block;
+        }
+        &.active {
+            opacity: 1;
+            flex-direction: column;
+            background-color: rgb(0, 0, 0);
+            height: 100vh;
+            .logo {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+            }
+            nav {
+                display: block;
+            }
+            .btn {
+                margin-bottom: 30%;
+                display: flex;
+            }
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+    @media (max-width: $smollScreen) {
+        .logo {
+            width: 200px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        nav ul li {
+            font-size: 2rem;
         }
     }
 }
