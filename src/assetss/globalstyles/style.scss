@@ -4,7 +4,7 @@
     justify-content: $justify-content;
     align-items: $align-items;
     gap: $gap;
-    @media (max-width: 900px) {
+    @media (max-width: $smollScreen) {
         flex-direction: column;
     }
 }
@@ -17,3 +17,5 @@ $bg-color1: #f23ac6;
 $bg-color2: #fc7000;
 $bg-color3: #3331f5;
 $bg-color4: #500c96;
+$smollScreen: 900px;
+$mediamScreen: 1400px;
