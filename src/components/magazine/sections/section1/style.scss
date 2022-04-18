@@ -1,8 +1,4 @@
 @import "assetss/globalstyles/style.scss";
-$bg-color1: #f23ac6;
-$bg-color2: #fc7000;
-$bg-color3: #3331f5;
-$bg-color4: #500c96;
 .M-section1 {
     min-height: 100vh;
     background-color: $bg-color4;
@@ -79,4 +75,23 @@ $bg-color4: #500c96;
             }
         }
     }
+    @media (max-width: $smollScreen) {
+        .topsquire {
+            left: 30%;
+        }
+        .Circel {
+            margin-top: 10rem;
+            width: 450px;
+            .content {
+                h1 {
+                    font-size: 25px;
+                }
+                p {
+                    position: relative;
+                    left: 0;
+                }
+            }
+        }
+    }
+    // @media (max-width: $mediamScreen) {}
 }
