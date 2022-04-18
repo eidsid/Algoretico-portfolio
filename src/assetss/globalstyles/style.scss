@@ -4,6 +4,9 @@
     justify-content: $justify-content;
     align-items: $align-items;
     gap: $gap;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
 }
 
 @mixin transation($time) {
