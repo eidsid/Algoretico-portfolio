@@ -5,7 +5,6 @@
     position: relative;
     padding-top: 7rem;
     @include flex();
-    z-index: -1;
     .topsquire {
         width: 300px;
         height: 300px;
