@@ -1,5 +1,7 @@
-to start the project you can run:
+to install all packages
+### `npm i`
 
+to start the project you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
