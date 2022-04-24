@@ -44,6 +44,9 @@
             transform: scale(1.05);
             cursor: pointer;
         }
+        @media (max-width: $smollScreen) {
+            width: 100%;
+        }
     }
     @keyframes dotanim {
         50% {
@@ -64,8 +67,5 @@
                 gap: 1.2rem;
             }
         }
-    }
-    @media (max-width: $smollScreen) {
-        width: 100%;
     }
 }
