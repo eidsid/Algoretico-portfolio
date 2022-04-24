@@ -14,6 +14,7 @@
     .cards {
         @include flex();
         gap: 4rem;
+        flex-wrap: wrap;
         .card {
             @include flex(column, center, center);
             gap: 1rem;
