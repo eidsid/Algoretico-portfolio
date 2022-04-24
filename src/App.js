@@ -1,4 +1,5 @@
 import About from "components/about/About";
+import Contact from "components/contact/Contact";
 import Footer from "components/footer/Footer";
 import Home from "components/home/Home";
 import Magazine from "components/magazine/magazine";
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/magazine" element={<Magazine />} />
+        <Route exact path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
