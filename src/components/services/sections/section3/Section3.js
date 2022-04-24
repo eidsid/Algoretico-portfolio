@@ -30,7 +30,7 @@ const Section3 = () => {
                 totius Galliae in diem certam indexre.
               </p>
               <div className="circel">
-                <div className="progressCircel __2">1STEP</div>
+                <div className="progressCircel __2">2STEP</div>
               </div>
             </div>{" "}
             <div className="card">
@@ -44,7 +44,7 @@ const Section3 = () => {
                 totius Galliae in diem certam indexre.
               </p>
               <div className="circel">
-                <div className="progressCircel __3">1STEP</div>
+                <div className="progressCircel __3">3STEP</div>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Section3 = () => {
                 totius Galliae in diem certam indexre.
               </p>
               <div className="circel">
-                <div className="progressCircel __2">1STEP</div>
+                <div className="progressCircel __2">2STEP</div>
               </div>
             </div>{" "}
             <div className="card">
@@ -90,7 +90,7 @@ const Section3 = () => {
                 totius Galliae in diem certam indexre.
               </p>
               <div className="circel">
-                <div className="progressCircel __3">1STEP</div>
+                <div className="progressCircel __3">3STEP</div>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Section3 = () => {
                 totius Galliae in diem certam indexre.
               </p>
               <div className="circel">
-                <div className="progressCircel __2">1STEP</div>
+                <div className="progressCircel __2">2STEP</div>
               </div>
             </div>{" "}
             <div className="card">
@@ -136,7 +136,7 @@ const Section3 = () => {
                 totius Galliae in diem certam indexre.
               </p>
               <div className="circel">
-                <div className="progressCircel __3">1STEP</div>
+                <div className="progressCircel __3">3STEP</div>
               </div>
             </div>
           </div>
