@@ -1,5 +1,12 @@
+import Section1 from "./sections/section1/Section1";
+import Section2 from "./sections/section2/Section2";
 import "./style.scss";
 const Contact = () => {
-  return <h1>contact</h1>;
+  return (
+    <>
+      <Section1 />
+      <Section2 />
+    </>
+  );
 };
 export default Contact;
