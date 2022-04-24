@@ -44,7 +44,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Link to="contact" className="btn">
+      <Link to="contact" className="btn" onClick={() => setNavStat(!NavStat)}>
         Let's talk
       </Link>
     </header>
