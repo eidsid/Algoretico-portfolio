@@ -1,5 +1,4 @@
 import "./style.scss";
-import logo from "assetss/images/logo.png";
 const Footer = () => {
   return (
     <div className="footer">
@@ -22,7 +21,6 @@ const Footer = () => {
           <span> Piazza Vttorio Alfieri 26, 14100 Asti (AT)</span>
         </div>
         <div className="col">
-          <img src={logo} alt="" />
           <span>
             Algoretico realizza qualsiasi tipo di software. Il nostro preferito?
             L'Intelligenza Artificiale.
@@ -35,7 +33,7 @@ const Footer = () => {
             20123 Milano (MI) SEDE LEGALE Piazza Vttorio Alfieri 26, 14100 Asti
             (AT)
           </span>
-        </div>
+        </div>{" "}
       </div>
     </div>
   );

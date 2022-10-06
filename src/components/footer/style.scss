@@ -1,5 +1,6 @@
 @import "../../assetss/globalstyles/style.scss";
 .footer {
+    @include flex(row, space-evenly, center);
     height: 350px;
     background-color: #520d86;
     position: relative;
@@ -18,14 +19,12 @@
             .big {
                 border-radius: 50%;
                 background-color: #7407c7;
+                width: 300px;
+                height: 300px;
             }
             .small {
                 width: 150px;
                 height: 150px;
-            }
-            .big {
-                width: 300px;
-                height: 300px;
             }
         }
         .group:nth-child(2) {
@@ -38,10 +37,6 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 34px;
-        img {
-            height: 150px;
-            width: 300px;
-        }
         .col {
             text-align: center;
             @include flex(column, flex-end);
