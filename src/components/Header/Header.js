@@ -4,8 +4,13 @@ import "./style.scss";
 import { useState } from "react";
 const Header = () => {
   const [NavStat, setNavStat] = useState(false);
+
+  const handleNavStat = () => {
+    setNavStat((prev) => !prev);
+  };
+
   return (
-    <header className={NavStat ? "active" : ""}>
+    <header className={NavStat && "active"}>
       <Link to="/">
         <img
           src={logo}
@@ -14,26 +19,31 @@ const Header = () => {
           onClick={() => setNavStat(false)}
         />
       </Link>
-      <div className={NavStat ? "bars active" : "bars"}>
-        <div className="hidden-btn" onClick={() => setNavStat(!NavStat)}></div>
+
+      <div className={`bars ${NavStat && " active"}`}>
+        <div className="hidden-btn" onClick={handleNavStat}></div>
       </div>
+
       <nav>
         <ul>
           <li>
-            <Link to="about" onClick={() => setNavStat(false)}>
+            <Link to="about" onClick={handleNavStat}>
               About us
             </Link>
           </li>
+
           <li>
-            <Link to="services" onClick={() => setNavStat(false)}>
+            <Link to="services" onClick={handleNavStat}>
               What do we do
             </Link>
           </li>
+
           <li>
-            <Link to="magazine" onClick={() => setNavStat(false)}>
+            <Link to="magazine" onClick={handleNavStat}>
               Magazine
             </Link>
           </li>
+
           <li>
             <a
               href="https://www.linkedin.com/feed/"
@@ -44,7 +54,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <Link to="contact" className="btn" onClick={() => setNavStat(!NavStat)}>
+
+      <Link to="contact" className="btn" onClick={handleNavStat}>
         Let's talk
       </Link>
     </header>
