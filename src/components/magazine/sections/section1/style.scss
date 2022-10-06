@@ -76,14 +76,15 @@
     }
     @media (max-width: $smollScreen) {
         .topsquire {
-            left: 30%;
+            transform: scale(0.5);
         }
         .Circel {
             margin-top: 10rem;
-            width: 450px;
+            width: fit-content;
+            padding: 1rem;
             .content {
                 h1 {
-                    font-size: 25px;
+                    font-size: 20px;
                 }
                 p {
                     position: relative;
