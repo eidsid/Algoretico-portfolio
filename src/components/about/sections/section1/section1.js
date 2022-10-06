@@ -6,7 +6,7 @@ import group11 from "assetss/images/Group11.png";
 const Section1 = () => {
   return (
     <div className="a_section1">
-      <img src={shafic} alt="" />
+      <img src={shafic} alt="shafic image" />
 
       <div className="container">
         <div className="circel">
