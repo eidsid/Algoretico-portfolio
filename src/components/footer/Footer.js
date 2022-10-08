@@ -1,7 +1,7 @@
 import "./style.scss";
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer>
       <div className="circels">
         <div className="group">
           <div className="small"></div>
@@ -35,7 +35,7 @@ const Footer = () => {
           </span>
         </div>{" "}
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer;
