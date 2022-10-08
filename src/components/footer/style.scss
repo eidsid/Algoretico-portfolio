@@ -1,5 +1,5 @@
 @import "../../assetss/globalstyles/style.scss";
-.footer {
+footer {
     @include flex(row, space-evenly, center);
     height: 350px;
     background-color: #520d86;
@@ -44,5 +44,11 @@
                 font-weight: 500;
             }
         }
+    }
+}
+
+@media (max-width: $smollScreen) {
+    footer .info {
+        line-height: 25px;
     }
 }
