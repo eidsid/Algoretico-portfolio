@@ -1,76 +1,85 @@
 @import "assetss/globalstyles/style.scss";
 .a_section1 {
-    position: relative;
-    background-image: linear-gradient(to right, $bg-color3, $bg-color4);
-    background-color: rgba(0, 0, 0, 0.473);
-    background-blend-mode: multiply;
-    min-height: 100vh;
-    padding-top: 7rem;
     @include flex();
-    >img {
-        width: 100vw;
-        position: absolute;
-        opacity: 0.6;
-    }
+    height: 100vh;
+    padding-top: 7rem;
+    position: relative;
+    background-color: rgba(43, 3, 153, 0.658);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
     .container {
+        overflow-x: visible;
         position: relative;
         .circel {
             position: absolute;
-            right: -10%;
-            top: -80%;
+            right: -80px;
+            top: -70px;
         }
-        h1 {
-            font-size: 70px;
-            transform: scaleY(2);
-            span {
-                position: absolute;
-                bottom: -40px;
-                right: 0;
-                font-size: 60px;
-                margin-left: 1rem;
-                background: radial-gradient( 63.01% 54.63% at 83.85% 75.44%, #f69d26 0%, #f97400 27.33%, #f23ac6 54.4%, #e138c6 78.88%, #db34bf 100%);
-                background-clip: text;
-                color: transparent;
+        div {
+            h1 {
+                font-size: 3rem;
+                transform: scaleY(2);
+            }
+            p {
+                float: right;
+                margin: -2px -7px 0 0;
                 span {
-                    font-weight: normal;
-                    font-size: 17px;
-                    opacity: 0.7;
-                    color: rgb(255, 255, 255);
-                    position: absolute;
-                    top: 60%;
-                    right: 95%;
+                    &:nth-child(1) {
+                        background: radial-gradient( 153.01% 128.63% at 97.85% 75.44%, #f69d26 32%, #f69d26 0%, #f97400 27.33%, #f23ac6 54.4%, #e138c6 78.88%, #db34bf 100%);
+                        background-clip: text;
+                        color: transparent;
+                        font-size: 3rem;
+                        font-weight: 700;
+                    }
+                    &:nth-child(2) {
+                        font-size: small;
+                        opacity: 0.5;
+                    }
                 }
             }
         }
         .bottom-circel {
-            left: -10%;
-            bottom: -100%;
-            position: absolute;
+            position: relative;
             width: 150px;
             height: 150px;
-            @include flex(column);
+            margin: -10% 0 0 -12%;
+            transform: scale(0.7);
+            .circle,
             img {
                 position: absolute;
-                width: fit-content;
-            }
-             :not(img) {
-                line-height: 17px;
-                font-weight: 700;
-                text-align: center;
-                * {
-                    display: block;
-                    font-size: 7px;
-                }
+                top: 0;
+                left: 0;
             }
             .circle {
-                position: absolute;
-                top: 0%;
-                left: -10%;
-                border: #db34bf 1px solid;
-                width: 120px;
-                height: 120px;
+                top: 10%;
+                width: 100px;
+                height: 100px;
+                border: #db34bfad solid 2px;
                 border-radius: 50%;
             }
+            img {
+                opacity: 0.8;
+            }
+            .textgroup {
+                @include flex(column, center, center);
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-size: 12px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+@media (max-width: $smollScreen) {
+    .a_section1 .container {
+        padding: 1rem;
+        .bottom-circel {
+            margin: 0 0 0 -5%;
         }
     }
 }
